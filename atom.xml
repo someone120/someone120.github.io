@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>someone120&#39;s blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://someone120.tk/"/>
+  <updated>2020-03-19T15:17:07.112Z</updated>
+  <id>http://someone120.tk/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>quarkmc</title>
+    <link href="http://someone120.tk/2020/03/19/quarkmc/"/>
+    <id>http://someone120.tk/2020/03/19/quarkmc/</id>
+    <published>2020-03-19T15:08:41.000Z</published>
+    <updated>2020-03-19T15:17:07.112Z</updated>
+    
+    <content type="html"><![CDATA[<p>Quarkmc 是一个用于 Minecraft Bedrock Edit 的 ws 服务器。他的存在让 Minecraft Bedrock Edit 大大增加了扩展性。</p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>1.克隆或者下载 zip 包。</p><p>2.移动到目录</p><p>3.执行 <code>npm install</code></p><h1 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h1><p>插件是 Quarkmc 的灵魂。如果没有了插件，就像人类失去了智力。</p><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>1.下载插件并放在 Quarkmc 的目录中。</p><p>2.执行 <code>node plugin.js install 插件的名称</code>。</p><h2 id="编写插件"><a href="#编写插件" class="headerlink" title="编写插件"></a>编写插件</h2><p>这一部分等会再说 w</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Quarkmc 是一个用于 Minecraft Bedrock Edit 的 ws 服务器。他的存在让 Minecraft Bedrock Edit 大大增加了扩展性。&lt;/p&gt;
+&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; tit
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
