@@ -8,5 +8,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://dadroid.cn/sitemap.xml
-Sitemap: http://dadroid.cn/baidusitemap.xml
+Sitemap: http://someone120.tk/sitemap.xml
+Sitemap: http://someone120.tk/baidusitemap.xml
