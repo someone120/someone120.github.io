@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://someone120.tk/"/>
-  <updated>2020-04-10T04:18:46.872Z</updated>
+  <updated>2020-04-11T03:00:15.502Z</updated>
   <id>http://someone120.tk/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Go操作Mysql数据库</title>
+    <link href="http://someone120.tk/Go%E6%93%8D%E4%BD%9CMysql%E6%95%B0%E6%8D%AE%E5%BA%93.html"/>
+    <id>http://someone120.tk/Go%E6%93%8D%E4%BD%9CMysql%E6%95%B0%E6%8D%AE%E5%BA%93.html</id>
+    <published>2020-04-11T02:50:01.000Z</published>
+    <updated>2020-04-11T03:00:15.502Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="go操作mysql数据库"><a class="markdownIt-Anchor" href="#go操作mysql数据库"></a> Go操作Mysql数据库</h2><p>Go没有内置的驱动支持任何数据库，但是Go定义了database/sql接口，用户可以基于驱动接口开发相应数据库的驱动。但缺点是，直接用 <a href="http://github.com/go-sql-driver/mysql" target="_blank" rel="noopener">github.com/go-sql-driver/mysql</a> 访问数据库都是直接写 sql，取出结果然后自己拼成对象，使用上面不是很方便，可读性也不好。</p><h3 id="下载包"><a class="markdownIt-Anchor" href="#下载包"></a> 下载包</h3><p><code>go get github.com/go-sql-driver/mysql</code></p><h3 id="使用"><a class="markdownIt-Anchor" href="#使用"></a> 使用</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">"database/sql"</span></span><br><span class="line">    <span class="string">"fmt"</span></span><br><span class="line">    _ <span class="string">"github.com/go-sql-driver/mysql"</span></span><br><span class="line">    <span class="string">"time"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">//数据库连接信息</span></span><br><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    USERNAME = <span class="string">"root"</span></span><br><span class="line">    PASSWORD = <span class="string">"123456"</span></span><br><span class="line">    NETWORK = <span class="string">"tcp"</span></span><br><span class="line">    SERVER = <span class="string">"127.0.0.1"</span></span><br><span class="line">    PORT = <span class="number">3306</span></span><br><span class="line">    DATABASE = <span class="string">"test"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    conn := fmt.Sprintf(<span class="string">"%s:%s@%s(%s:%d)/%s"</span>,USERNAME, PASSWORD, NETWORK, SERVER, PORT, DATABASE)</span><br><span class="line">    DB, err := sql.Open(<span class="string">"mysql"</span>, conn)</span><br><span class="line">    <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">        fmt.Println(<span class="string">"connection to mysql failed:"</span>, err)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;go操作mysql数据库&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#go操作mysql数据库&quot;&gt;&lt;/a&gt; Go操作Mysql数据库&lt;/h2&gt;
+&lt;p&gt;Go没有内置的驱动支持任何数据库，但是Go定义了database/sql接口，用户可
+      
+    
+    </summary>
+    
+    
+    
+      <category term="coding" scheme="http://someone120.tk/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>我吃了个番茄</title>
